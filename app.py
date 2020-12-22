@@ -39,7 +39,7 @@ def callback():
 def handle_message(event):
     msg = event.message.text
     r = '你是在大聲什麼啦！'
-    if ('早餐', '晚餐', '中餐' ,'午餐') in msg:
+    if ('早餐' or '晚餐' or '中餐' or '午餐') in msg:
         r = '吃我屌'
 
 
