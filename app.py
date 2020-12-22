@@ -38,13 +38,9 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     msg = event.message.text
-    line_bot_api.reply_message(
-        event.reply_token,
-        TextSendMessage(text='你好啊'))
-    # msg = event.message.text
-    # r = '你是在大聲什麼啦！'
-    # if ['早餐', '晚餐', '中餐' ,'午餐'] in msg:
-    #     r = '吃我屌'
+    r = '你是在大聲什麼啦！'
+    if ['早餐', '晚餐', '中餐' ,'午餐'] in msg:
+        r = '吃我屌'
 
 
     line_bot_api.reply_message(
