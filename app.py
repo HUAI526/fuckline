@@ -39,9 +39,9 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
     msg = event.message.text
-    s = random.randint(0,10)
+    s = random.randint(0,20)
     if s == 5:
-        r = '你是在大聲什麼啦！'
+        r = '閉嘴'
     elif '早餐' in msg:
         r = '吃我屌'
     elif '午餐' in msg:
@@ -52,7 +52,11 @@ def handle_message(event):
         r = '吃我屌'
     elif '要幹嘛' in msg:
         r = random.choice([
-            '找歪屌做愛', '打球', '健身', '去看你女朋友洗澡', '不知道', '上你', '你覺得去上課怎麼樣', '跟妹妹壞壞'])
+            '做愛', '打球', '健身', '去看你女朋友洗澡', '不知道', '上你', '你覺得去上課怎麼樣', '跟妹妹壞壞'])
+    elif '出門' in msg:
+        r = '誒你要確定誒'
+    elif '打球' in msg:
+        r = '不去的都是俗仔'
 
         
 
