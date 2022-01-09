@@ -57,8 +57,8 @@ def handle_message(event):
         r = random.choice(['誒你要確定誒','是不是在騙','最好不要比我晚到'])
     elif '打球' in msg:
         r = random.choice(['不去的都是俗仔','想被電？菜雞'])
-    elif '有人在臭' in msg:
-        r = '又在臭'
+   # elif '有人在臭' in msg:
+    #    r = '又在臭'
     
         
 
