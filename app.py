@@ -41,24 +41,27 @@ def handle_message(event):
     msg = event.message.text
     s = random.randint(0,30)
     if s == 5:
-        r = '閉嘴'
+        r = random.choice(['閉嘴','好想做愛喔'])
     elif '早餐' in msg:
         r = '幾點哪裡'
     elif '午餐' in msg:
         r = '吃早餐店不叫午餐好不好'
     elif '晚餐' in msg:
-        r = '吃我屌'
-    elif '宵夜' in msg:
-        r = '吃我屌'
+        r = '牛肉麵唯一真理'
+    #elif '宵夜' in msg:
+    #    r = ''
     elif '要幹嘛' in msg:
         r = random.choice([
-            '做愛', '打球', '健身', '去看女生洗澡', '不知道', '上你', '上課怎麼樣', '約臭妹妹壞壞'])
+            '做愛', '打球', '健身', '去阿馬家訂pizza', '去看女生洗澡', '不知道', '上你', '上課怎麼樣', '約臭妹妹壞壞'])
     elif '出門' in msg:
         r = random.choice(['誒你要確定誒','是不是在騙','最好不要比我晚到'])
     elif '打球' in msg:
-        r = random.choice(['不去的都是俗仔','想被電？菜雞'])
-   # elif '有人在臭' in msg:
-    #    r = '又在臭'
+        r = random.choice(['不去的都是俗仔','想被電？菜雞','褱是真的強','班長要準時在連集合場看到你各位啊','誰又想當無情練球機器'])
+    elif '上班' in msg:
+        r = random.choice(['公司不會陪你一輩子,我們才會','中了資本主義的陷阱？','那幾個錢都沒有打球快樂'])
+
+   elif '有人在臭' in msg:
+        r = '又在臭'
     
         
 
